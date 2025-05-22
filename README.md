@@ -26,7 +26,7 @@
 ## 📦 How to Run
 
 You can play the game live here:
-👉 [Play on Netlify](https://682ecfe49b2ce4df5241aa80--meme-heist.netlify.app/)
+👉 [Play on Netlify](https://682ed34103ba12e8195f40a3--meme-h.netlify.app/)
 
 Or run locally:
 
