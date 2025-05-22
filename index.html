@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meme Heist: Steal the Internet!</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-top: 20px;
+    }
+    canvas {
+      background: #222;
+      border: 3px solid #fff;
+      display: block;
+      margin: 20px auto;
+    }
+    #controls {
+      margin-top: 10px;
+    }
+    select, button {
+      padding: 8px 12px;
+      margin: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+    button:disabled {
+      background: #555;
+      cursor: not-allowed;
+    }
+    button:hover:not(:disabled) {
+      background: #218838;
+    }
+    select {
+      background: #444;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meme Heist: Steal the Internet!</h1>
+
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+  <div id="controls">
+    <label for="difficulty">Select Difficulty:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+    <button id="playBtn">Play</button>
+    <button id="resetBtn" disabled>Reset Game</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
